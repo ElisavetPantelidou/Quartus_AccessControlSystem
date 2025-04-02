@@ -1,0 +1,248 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do AccessControlSystem_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {E:/PERSONAL/AEGEAN/YEAR_1_SEMESTER_B/1_Computer_Architecture/ergasia_6mhnou/code02.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity KeyVerification
+# -- Compiling architecture Behavioral of KeyVerification
+# -- Compiling entity ShiftIdentification
+# -- Compiling architecture Behavioral of ShiftIdentification
+# -- Compiling entity AccessControl
+# -- Compiling architecture Behavioral of AccessControl
+# -- Compiling entity AccessControlSystem
+# -- Compiling architecture Behavioral of AccessControlSystem
+# -- Loading entity KeyVerification
+# -- Loading entity ShiftIdentification
+# -- Loading entity AccessControl
+# 
+# vcom -93 -work work {E:/PERSONAL/AEGEAN/YEAR_1_SEMESTER_B/1_Computer_Architecture/ergasia_6mhnou/AccessControlSystem/../AccessControlSystem_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity AccessControlSystem_tb
+# -- Compiling architecture tb of AccessControlSystem_tb
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs="+acc"  AccessControlSystem_tb.vhd
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps AccessControlSystem_tb.vhd 
+# ** Error: (vsim-19) Failed to access library 'AccessControlSystem_tb' at "AccessControlSystem_tb".
+# 
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./AccessControlSystem_run_msim_rtl_vhdl.do PAUSED at line 12
+vsim -voptargs=+acc work.accesscontrolsystem_tb
+# vsim -voptargs=+acc work.accesscontrolsystem_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.accesscontrolsystem_tb(tb)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.accesscontrolsystem(behavioral)
+# Loading work.keyverification(behavioral)
+# Loading work.shiftidentification(behavioral)
+# Loading work.accesscontrol(behavioral)
+add wave -position end  sim:/accesscontrolsystem_tb/T1
+add wave -position end  sim:/accesscontrolsystem_tb/T2
+add wave -position end  sim:/accesscontrolsystem_tb/S1
+add wave -position end  sim:/accesscontrolsystem_tb/S2
+add wave -position end  sim:/accesscontrolsystem_tb/SupervisorVerify
+add wave -position end  sim:/accesscontrolsystem_tb/FinalAccess
+add wave -position end  sim:/accesscontrolsystem_tb/Time
+run -all
+# Simulation may not continue after final blocks are run.
+run -all
+# Simulation may not continue after final blocks are run.
+vsim -voptargs=+acc work.accesscontrolsystem_tb
+# vsim -voptargs=+acc work.accesscontrolsystem_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.accesscontrolsystem_tb(tb)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.accesscontrolsystem(behavioral)
+# Loading work.keyverification(behavioral)
+# Loading work.shiftidentification(behavioral)
+# Loading work.accesscontrol(behavioral)
+add wave -position end  sim:/accesscontrolsystem_tb/T1
+add wave -position end  sim:/accesscontrolsystem_tb/T2
+add wave -position end  sim:/accesscontrolsystem_tb/S1
+add wave -position end  sim:/accesscontrolsystem_tb/S2
+add wave -position end  sim:/accesscontrolsystem_tb/SupervisorVerify
+add wave -position end  sim:/accesscontrolsystem_tb/FinalAccess
+add wave -position end  sim:/accesscontrolsystem_tb/Time
+run 100ns
+add wave -r sim:/FullAdder_tb/*
+# (vish-4014) No objects found matching '/FullAdder_tb/*'.
+add wave -r sim:/AccessControlSystem_tb/*
+add wave sim:/AccessControlSystem_tb/T1
+add wave sim:/AccessControlSystem_tb/T2
+add wave sim:/AccessControlSystem_tb/S1
+add wave sim:/AccessControlSystem_tb/S2
+add wave sim:/AccessControlSystem_tb/SupervisorVerify
+add wave sim:/AccessControlSystem_tb/FinalAccess
+add wave sim:/AccessControlSystem_tb/Time
+restart
+vcom -reportprogress 300 -work work E:/PERSONAL/AEGEAN/YEAR_1_SEMESTER_B/1_Computer_Architecture/ergasia_6mhnou/AccessControlSystem_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity AccessControlSystem_tb
+# -- Compiling architecture tb of AccessControlSystem_tb
+vcom -reportprogress 300 -work work E:/PERSONAL/AEGEAN/YEAR_1_SEMESTER_B/1_Computer_Architecture/ergasia_6mhnou/AccessControlSystem_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity AccessControlSystem_tb
+# -- Compiling architecture tb of AccessControlSystem_tb
+vsim -voptargs=+acc work.accesscontrolsystem_tb
+# vsim -voptargs=+acc work.accesscontrolsystem_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.accesscontrolsystem_tb(tb)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.accesscontrolsystem(behavioral)
+# Loading work.keyverification(behavioral)
+# Loading work.shiftidentification(behavioral)
+# Loading work.accesscontrol(behavioral)
+run -all
+# ** Note: Test Case 1: No keys pressed, no supervisor verification
+#    Time: 0 ps  Iteration: 0  Instance: /accesscontrolsystem_tb
+# ** Note: Test Case 2: Correct morning shift keys and supervisor verification
+#    Time: 50 ns  Iteration: 0  Instance: /accesscontrolsystem_tb
+# ** Note: Test Case 3: Correct afternoon shift keys and supervisor verification
+#    Time: 100 ns  Iteration: 0  Instance: /accesscontrolsystem_tb
+# ** Note: Test Case 4: Valid shift but missing supervisor verification
+#    Time: 150 ns  Iteration: 0  Instance: /accesscontrolsystem_tb
+# ** Note: Test Case 5: Invalid time
+#    Time: 200 ns  Iteration: 0  Instance: /accesscontrolsystem_tb
+add wave -position end  sim:/accesscontrolsystem_tb/T1
+add wave -position end  sim:/accesscontrolsystem_tb/T2
+add wave -position end  sim:/accesscontrolsystem_tb/S1
+add wave -position end  sim:/accesscontrolsystem_tb/S2
+add wave -position end  sim:/accesscontrolsystem_tb/SupervisorVerify
+add wave -position end  sim:/accesscontrolsystem_tb/FinalAccess
+add wave -position end  sim:/accesscontrolsystem_tb/Time
+run -all
+run 100 ns
+vcom -reportprogress 300 -work work E:/PERSONAL/AEGEAN/YEAR_1_SEMESTER_B/1_Computer_Architecture/ergasia_6mhnou/AccessControlSystem_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity AccessControlSystem_tb
+# -- Compiling architecture tb of AccessControlSystem_tb
+vsim -voptargs=+acc work.accesscontrolsystem_tb
+# vsim -voptargs=+acc work.accesscontrolsystem_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.accesscontrolsystem_tb(tb)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.accesscontrolsystem(behavioral)
+# Loading work.keyverification(behavioral)
+# Loading work.shiftidentification(behavioral)
+# Loading work.accesscontrol(behavioral)
+add wave -position end  sim:/accesscontrolsystem_tb/T1
+add wave -position end  sim:/accesscontrolsystem_tb/T2
+add wave -position end  sim:/accesscontrolsystem_tb/S1
+add wave -position end  sim:/accesscontrolsystem_tb/S2
+add wave -position end  sim:/accesscontrolsystem_tb/SupervisorVerify
+add wave -position end  sim:/accesscontrolsystem_tb/FinalAccess
+add wave -position end  sim:/accesscontrolsystem_tb/Time
+run 100 ns
+run -all
+vcom -reportprogress 300 -work work E:/PERSONAL/AEGEAN/YEAR_1_SEMESTER_B/1_Computer_Architecture/ergasia_6mhnou/AccessControlSystem_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity AccessControlSystem_tb
+# -- Compiling architecture tb of AccessControlSystem_tb
+vsim -voptargs=+acc work.accesscontrolsystem_tb
+# vsim -voptargs=+acc work.accesscontrolsystem_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.accesscontrolsystem_tb(tb)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.accesscontrolsystem(behavioral)
+# Loading work.keyverification(behavioral)
+# Loading work.shiftidentification(behavioral)
+# Loading work.accesscontrol(behavioral)
+add wave -position end  sim:/accesscontrolsystem_tb/T1
+add wave -position end  sim:/accesscontrolsystem_tb/T2
+add wave -position end  sim:/accesscontrolsystem_tb/S1
+add wave -position end  sim:/accesscontrolsystem_tb/S2
+add wave -position end  sim:/accesscontrolsystem_tb/SupervisorVerify
+add wave -position end  sim:/accesscontrolsystem_tb/FinalAccess
+add wave -position end  sim:/accesscontrolsystem_tb/Time
+run 100 ns
+run -all
+run -all
+restart
+run -all
+vcom -reportprogress 300 -work work E:/PERSONAL/AEGEAN/YEAR_1_SEMESTER_B/1_Computer_Architecture/ergasia_6mhnou/final/AccessControlSystemm_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity AccessControlSystemm_tb
+# -- Compiling architecture tb of AccessControlSystemm_tb
+vsim -voptargs=+acc work.accesscontrolsystemm_tb
+# vsim -voptargs=+acc work.accesscontrolsystemm_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.accesscontrolsystemm_tb(tb)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.accesscontrolsystem(behavioral)
+# Loading work.keyverification(behavioral)
+# Loading work.shiftidentification(behavioral)
+# Loading work.accesscontrol(behavioral)
+add wave -position end  sim:/accesscontrolsystemm_tb/T1
+add wave -position end  sim:/accesscontrolsystemm_tb/T2
+add wave -position end  sim:/accesscontrolsystemm_tb/S1
+add wave -position end  sim:/accesscontrolsystemm_tb/S2
+add wave -position end  sim:/accesscontrolsystemm_tb/SupervisorVerify
+add wave -position end  sim:/accesscontrolsystemm_tb/FinalAccess
+add wave -position end  sim:/accesscontrolsystemm_tb/Time
+run 100 ns
+restart
+run -all
