@@ -57,3 +57,4 @@ set_global_assignment -name EDA_TEST_BENCH_NAME AccessControlSystem_tb.vhd -sect
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id AccessControlSystem_tb.vhd
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME AccessControlSystem_tb.vhd -section_id AccessControlSystem_tb.vhd
 set_global_assignment -name EDA_TEST_BENCH_FILE ../AccessControlSystem_tb.vhd -section_id AccessControlSystem_tb.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
