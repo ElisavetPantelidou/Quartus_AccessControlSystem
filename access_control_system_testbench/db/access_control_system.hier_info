@@ -1,0 +1,14 @@
+|access_control_system
+T1 => tempB1Gate.IN0
+S1 => tempB1Gate.IN1
+T2 => tempB2Gate.IN0
+S2 => tempB2Gate.IN1
+E => tempB1Valid.IN1
+E => tempB2Valid.IN1
+B1Gate << tempB1Gate.DB_MAX_OUTPUT_PORT_TYPE
+B2Gate << tempB2Gate.DB_MAX_OUTPUT_PORT_TYPE
+B1Valid << tempB1Valid.DB_MAX_OUTPUT_PORT_TYPE
+B2Valid << tempB2Valid.DB_MAX_OUTPUT_PORT_TYPE
+P1 << P1.DB_MAX_OUTPUT_PORT_TYPE
+
+

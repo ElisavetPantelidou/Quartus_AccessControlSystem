@@ -1,9 +1,0 @@
-transcript on
-if {[file exists rtl_work]} {
-	vdel -lib rtl_work -all
-}
-vlib rtl_work
-vmap work rtl_work
-
-vcom -93 -work work {E:/PERSONAL/AEGEAN/YEAR_1_SEMESTER_B/1_Computer_Architecture/ergasia_6mhnou/code02.vhdl}
-

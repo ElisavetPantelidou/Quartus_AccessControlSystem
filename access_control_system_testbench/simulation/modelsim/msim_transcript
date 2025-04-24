@@ -1,0 +1,73 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do access_control_system_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {E:/PERSONAL/AEGEAN/YEAR_1_SEMESTER_B/1_Computer_Architecture/ergasia_6mhnou/final/access_control_system.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity access_control_system
+# -- Compiling architecture Behavioral of access_control_system
+# 
+# vcom -93 -work work {E:/PERSONAL/AEGEAN/YEAR_1_SEMESTER_B/1_Computer_Architecture/ergasia_6mhnou/access_control_system_testbench/../final/access_control_system.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_access_control_system
+# -- Compiling architecture test of tb_access_control_system
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs="+acc"  access_control_system_testbench
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs=\"+acc\" -t 1ps access_control_system_testbench 
+# ** Error: (vsim-3170) Could not find 'E:/PERSONAL/AEGEAN/YEAR_1_SEMESTER_B/1_Computer_Architecture/ergasia_6mhnou/access_control_system_testbench/simulation/modelsim/rtl_work.access_control_system_testbench'.
+# 
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./access_control_system_run_msim_rtl_vhdl.do PAUSED at line 12
+vsim -voptargs=+acc work.tb_access_control_system
+# vsim -voptargs=+acc work.tb_access_control_system 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_access_control_system(test)
+# Loading work.access_control_system(behavioral)
+add wave -position end  sim:/tb_access_control_system/T1
+add wave -position end  sim:/tb_access_control_system/S1
+add wave -position end  sim:/tb_access_control_system/T2
+add wave -position end  sim:/tb_access_control_system/S2
+add wave -position end  sim:/tb_access_control_system/E
+add wave -position end  sim:/tb_access_control_system/B1Gate
+add wave -position end  sim:/tb_access_control_system/B2Gate
+add wave -position end  sim:/tb_access_control_system/B1Valid
+add wave -position end  sim:/tb_access_control_system/B2Valid
+add wave -position end  sim:/tb_access_control_system/P1
+run 100ns
+run -all
+add wave -r *
+run 100ns
+
+reset
+# invalid command name "reset"
+restart -f
+add wave -position end  sim:/tb_access_control_system/T1
+add wave -position end  sim:/tb_access_control_system/S1
+add wave -position end  sim:/tb_access_control_system/T2
+add wave -position end  sim:/tb_access_control_system/S2
+add wave -position end  sim:/tb_access_control_system/E
+add wave -position end  sim:/tb_access_control_system/B1Gate
+add wave -position end  sim:/tb_access_control_system/B2Gate
+add wave -position end  sim:/tb_access_control_system/B1Valid
+add wave -position end  sim:/tb_access_control_system/B2Valid
+add wave -position end  sim:/tb_access_control_system/P1
+run -all
+run 100ns
