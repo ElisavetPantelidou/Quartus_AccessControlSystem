@@ -1,0 +1,10 @@
+|rtl
+T1 => B1Gate.IN0
+S1 => B1Gate.IN1
+T2 => B2Gate.IN0
+S2 => B2Gate.IN1
+E => B1Valid.IN1
+E => B2Valid.IN1
+P1 <= P1.DB_MAX_OUTPUT_PORT_TYPE
+
+

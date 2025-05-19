@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, E:/PERSONAL/AEGEAN/YEAR_1_SEMESTER_B/1_Computer_Architecture/ergasia_6mhnou/rtl/access_control_system.vhd
+source_file = 1, E:/PERSONAL/AEGEAN/YEAR_1_SEMESTER_B/1_Computer_Architecture/ergasia_6mhnou/rtl/db/rtl.cbx.xml
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = rtl
+instance = comp, \P1~output\, P1~output, rtl, 1
+instance = comp, \S2~input\, S2~input, rtl, 1
+instance = comp, \T1~input\, T1~input, rtl, 1
+instance = comp, \S1~input\, S1~input, rtl, 1
+instance = comp, \T2~input\, T2~input, rtl, 1
+instance = comp, \P1~0\, P1~0, rtl, 1
+instance = comp, \E~input\, E~input, rtl, 1
+instance = comp, \P1~1\, P1~1, rtl, 1
